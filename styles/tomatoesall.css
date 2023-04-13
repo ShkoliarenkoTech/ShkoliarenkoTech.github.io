@@ -144,6 +144,7 @@ section#content h1 {
     margin-bottom: 50px;
 }
 .block-3__card {
+    padding: 1px;
     width: 350px;
     height: 321px;
     background: #ffffff;

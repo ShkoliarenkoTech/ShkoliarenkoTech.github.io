@@ -91,3 +91,9 @@ body._lock {
     margin-top: 0px;
     background: #fff;
 }
+
+@media (max-width: 500px) {
+    .navbar-brand {
+        width: 75%;
+    }
+}

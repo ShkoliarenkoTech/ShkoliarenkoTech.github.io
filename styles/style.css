@@ -293,3 +293,67 @@ h1 {
 #thumb-2 {
     margin-top: -73px;
 }
+/* !media */
+@media (max-height: 1000px) and (max-width: 1200px) {
+    .wrapper__caption {
+        margin-top: 200px;
+    }
+}
+@media (max-height: 600px) {
+    .wrapper__caption {
+        margin-top: 100px;
+    }
+}
+@media (max-width: 1200px) {
+    .cultures__items {
+        justify-content: center;
+    }
+    .container__card {
+        flex-direction: column;
+        padding-top: 20px;
+    }
+    .card__info {
+        text-align: center;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    .card__union {
+        align-self: center;
+        width: 100px;
+    }
+    .card__thumb {
+        width: 75%;
+        align-self: center;
+    }
+    .card__text {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+    .card-2 {
+        flex-direction: column-reverse;
+    }
+}
+@media (max-width: 992px) {
+    .wrapper__caption {
+        display: flex;
+        height: 100vh;
+        margin-top: 100px;
+        /* max-height: 500px; */
+    }
+}
+@media (max-width: 768px) {
+    .activities h1 {
+        font-size: 50px;
+    }
+    #thumb-2 {
+        margin-top: -73px;
+    }
+}
+@media (max-width: 500px) {
+    .card__text {
+        font-size: 30px;
+    }
+    .card__thumb {
+        width: 90%;
+    }
+}

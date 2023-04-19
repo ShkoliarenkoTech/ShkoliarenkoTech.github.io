@@ -5,7 +5,7 @@ body {
 }
 section#background {
     margin-top: 130px;
-    background-image: url(../images/tomatoesall/mainbg.svg);
+    background-image: url(../images/Dill/dill_banner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 480px;
@@ -192,6 +192,7 @@ section#content h1 {
     width: 350px;
     height: 252px;
 }
+
 /* !media */
 @media (max-width: 1200px) {
     .block-2__cards {

@@ -34,11 +34,11 @@ var app = new Vue({
     el: "#app",
     data: {
         products: [
-            { id: 1, title: "TAG 1000 (TAG 853)", short_text: "Dill Determinate Green Standard Round", image: 'first.jpg', desc: "Full desc" },
-            { id: 2, title: "TAG 1001 (TAG 855)", short_text: "Dill Determinate Green Standard Round", image: 'second.jpeg', desc: "Full desc" },
-            { id: 3, title: "TAG 1002 (TAG 809)", short_text: "Dill Determinate Green Standard Round", image: 'third.jpeg', desc: "Full desc" },
-            { id: 4, title: "TAG 1003 (TAG 834)", short_text: "Dill Determinate Green Standard Round", image: 'forth.jpeg', desc: "Full desc" },
-            { id: 5, title: "TAG 1004 (TAG 848)", short_text: "Dill Determinate Green Standard Round", image: 'fifth.jpg', desc: "Full desc" },
+            { id: 1, title: "TAG 1000 (TAG 853)", short_text: "Dill Determinate Green Standard Long", image: 'first.jpg', desc: "Full desc" },
+            { id: 2, title: "TAG 1001 (TAG 855)", short_text: "Dill Determinate Green Standard Long", image: 'second.jpeg', desc: "Full desc" },
+            { id: 3, title: "TAG 1002 (TAG 809)", short_text: "Dill Determinate Green Standard Long", image: 'third.jpeg', desc: "Full desc" },
+            { id: 4, title: "TAG 1003 (TAG 834)", short_text: "Dill Determinate Green Standard Long", image: 'forth.jpeg', desc: "Full desc" },
+            { id: 5, title: "TAG 1004 (TAG 848)", short_text: "Dill Determinate Green Standard Long", image: 'fifth.jpg', desc: "Full desc" },
         ],
         product: [],
         cart: [],

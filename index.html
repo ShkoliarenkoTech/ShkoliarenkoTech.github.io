@@ -9,6 +9,46 @@
     <link rel="stylesheet" href="styles/footer.css">
     <link rel="manifest" href="manifest.json">
     <title>Home page</title>
+    <script>
+        function askPermission() {
+            return new Promise(function (resolve, reject) {
+                const permissionResult = Notification.requestPermission(function (result) {
+                    resolve(result);
+                });
+
+                if (permissionResult) {
+                    permissionResult.then(resolve, reject);
+                }
+            })
+                .then(function (permissionResult) {
+                    if (permissionResult !== 'granted') {
+                        throw new Error('We weren\'t granted permission.');
+                    }
+                });
+        }
+
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker
+                .register('./sw.js')
+                .then(function () {
+                    console.log('Service worker registered!');
+                });
+
+            navigator.serviceWorker.ready.then(registration => {
+                if ('PushManager' in window) {
+                    document.getElementById('subscribe-for-push').addEventListener('click', () => {
+                        console.log('clicked');
+                        if (confirm("Бажаєте підписатися на сповіщення?") == true) {
+                            askPermission()
+                        }
+                        else {
+                            alert('Ви відмовилися від сповіщень')
+                        }
+                    });
+                }
+            });
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -50,7 +90,7 @@
             <div class="header__caption">
                 <span class="caption__text">Agridera Seeds and Agriculture Ltd</span>
                 <div class="caption__btn">
-                    <button type="button" class="btn btn-success">read more</button>
+                    <button type="button" class="btn btn-success" id="subscribe-for-push">SUBSCRIBE FOR PUSH</button>
                 </div>
             </div>
         </div>
